@@ -1,5 +1,5 @@
 :root{
-    --title-color: #322153;
+    --title-color: #321775;
     --primary-color:#34cb79;
 }
 
@@ -13,7 +13,7 @@ html {
 }
 
 body{
-    background-image: linear-gradient(to top, #87c3f5 35%, #68e0cf 65%);
+    background: #f0f0f5;
     -webkit-font-smoothing:antialiased;
 }
 
@@ -24,4 +24,38 @@ a {
 h1, h2, h3, h4, h5 ,h6 {
     color: var(--title-color);
     font-family: 'ubuntu', sans-serif;
+}
+
+#page-home h1{
+    margin: 100px;
+    text-align: center;
+}
+
+#page-home h2{
+    margin-left: 250px;
+    text-align:left;
+}
+
+#page-home .autor{
+    margin: 5vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-home img{
+    margin-left: 30px;
+    border-radius: 50%
+}
+
+#page-home p{
+    margin: 30px;
+    text-align:justify;
+    color: black;
+    font-weight: 550;
+}
+
+iframe{
+    margin-left: 400px;
+    margin-top: 200px;
 }
