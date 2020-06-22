@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
+import infor from './shared/maininfo';
 
 class Main extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            infor:infor
+        }
+    }
 
     render(){
       return (

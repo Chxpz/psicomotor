@@ -38,4 +38,4 @@ export const infor = [
     }
 ]
 
-export default dishes;
+export default infor;
