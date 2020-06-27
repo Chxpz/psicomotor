@@ -15,7 +15,7 @@ html {
 }
 
 body{
-    background: #f0f0f5;
+    background: #fff;
     -webkit-font-smoothing:antialiased;
     height: 100%;
 }
@@ -54,7 +54,8 @@ h1, h2, h3, h4, h5 ,h6 {
 
 .parallax img{
     max-width: 100%;
-  
+    padding-left: 26rem;
+    padding-top: 12rem;
 }
 
 .parallax h1{

@@ -1,30 +1,11 @@
-import slide from './transitions/slide';
+const TypeWriter = function(txtElement, words, wait=3000){
+  this.txtElement=txtElement;
+  this.words=words;
+  this.txt='';
+  this.wordIndex = 0;
+  this.wait = parseInt(wait, 10);
+  this.type();
+  this.isDeleting = false
+}
 
-const { barba } = window;
-
-console.info('🚀App:init');
-
-barba.hooks.before(() => {
-  barba.wrapper.classList.add('is-animating');
-});
-barba.hooks.after(() => {
-  barba.wrapper.classList.remove('is-animating');
-});
-
-barba.init({
-  debug: true,
-  transitions: [
-    {
-      sync: true,
-      custom: ({ trigger }) => trigger.dataset && trigger.dataset.direction === 'next',
-      leave: ({ current }) => slide(current.container, 'leave', 'next'),
-      enter: ({ next }) => slide(next.container, 'enter', 'next'),
-    },
-    {
-      sync: true,
-      custom: ({ trigger }) => trigger.dataset && trigger.dataset.direction === 'prev',
-      leave: ({ current }) => slide(current.container, 'leave', 'prev'),
-      enter: ({ next }) => slide(next.container, 'enter', 'prev'),
-    },
-  ],
-});
+//16

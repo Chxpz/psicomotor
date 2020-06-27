@@ -38,14 +38,14 @@
 }
 
 #autor-objetivo ul:hover li {
-    width: 30%;
-    height: 45vh;
+    width: 40%;
+    height: 40vh;
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
 #autor-objetivo ul li:hover {
-    width: 70%;
-    height:  45vh;
+    width: 60%;
+    height:  40vh;
     background-image: linear-gradient(to right, #4facfe 0%, #8bf9ff 100%)
 }
 
